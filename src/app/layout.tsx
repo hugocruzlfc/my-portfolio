@@ -30,7 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <div className="relative">
+            <div className="gradient-circle"></div>
+            <div className="gradient-circle-bottom"></div>
+            <div className="container mx-auto mb-10">{children}</div>
+          </div>
+        </Providers>
       </body>
     </html>
   );

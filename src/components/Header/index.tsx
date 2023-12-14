@@ -7,6 +7,7 @@ import { Button } from "../Button";
 import Image from "next/image";
 import data from "../../data/portfolio.json";
 import Link from "next/link";
+import { ThemeSwitcher } from "../ThemeSwitcher";
 
 interface HeaderProps {
   handleWorkScroll?: () => void;
@@ -19,7 +20,7 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const router = useRouter();
   const pathname = usePathname();
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   const isResume = pathname === "/resume";
@@ -29,6 +30,10 @@ export const Header: React.FC<HeaderProps> = ({
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <>
@@ -44,33 +49,23 @@ export const Header: React.FC<HeaderProps> = ({
               </h1>
 
               <div className="flex items-center">
-                {data.darkMode && (
-                  <Button
-                    onClick={() =>
-                      setTheme(theme === "dark" ? "light" : "dark")
-                    }
-                  >
-                    <Image
-                      className="h-6"
-                      src={`/icons/${
-                        theme === "dark" ? "moon.svg" : "sun.svg"
-                      }`}
-                      alt="Theme switcher"
-                      width={24}
-                      height={24}
-                    />
-                  </Button>
-                )}
+                <Button
+                  onClick={() =>
+                    setTheme(resolvedTheme === "dark" ? "light" : "dark")
+                  }
+                >
+                  <ThemeSwitcher theme={resolvedTheme} />
+                </Button>
 
                 <Popover.Button>
                   <Image
                     className="h-5"
                     src={`/icons/${
                       !open
-                        ? theme === "dark"
+                        ? resolvedTheme === "dark"
                           ? "menu-white.svg"
                           : "menu.svg"
-                        : theme === "light"
+                        : resolvedTheme === "light"
                         ? "cancel.svg"
                         : "cancel-white.svg"
                     }`}
@@ -83,7 +78,7 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
             <Popover.Panel
               className={`absolute right-0 z-10 w-11/12 p-4 ${
-                theme === "dark" ? "bg-slate-800" : "bg-white"
+                resolvedTheme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
               <div className="grid grid-cols-1">
@@ -112,7 +107,7 @@ export const Header: React.FC<HeaderProps> = ({
       </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          theme === "light" && "bg-white"
+          resolvedTheme === "light" && "bg-white"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
         <Link href="/">
@@ -126,35 +121,30 @@ export const Header: React.FC<HeaderProps> = ({
             <>
               <Button onClick={handleWorkScroll}>Work</Button>
               <Button onClick={handleAboutScroll}>About</Button>
+              <Button
+                onClick={() => router.push("/resume")}
+                classes="first:ml-1"
+              >
+                Resume
+              </Button>
             </>
           ) : (
             <Link href="/">
               <Button>Home</Button>
             </Link>
           )}
-          <Button
-            onClick={() => router.push("/resume")}
-            classes="first:ml-1"
-          >
-            Resume
-          </Button>
 
           <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
             Contact
           </Button>
-          {mounted && theme && data.darkMode && (
-            <Button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            >
-              <Image
-                className="h-6"
-                src={`/icons/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                alt="Theme switcher"
-                width={24}
-                height={24}
-              />
-            </Button>
-          )}
+
+          <Button
+            onClick={() =>
+              setTheme(resolvedTheme === "dark" ? "light" : "dark")
+            }
+          >
+            <ThemeSwitcher theme={resolvedTheme} />
+          </Button>
         </div>
       </div>
     </>
