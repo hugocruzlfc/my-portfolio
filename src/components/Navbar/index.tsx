@@ -21,7 +21,7 @@ export const NavBar: React.FC = () => {
   const { name } = data;
 
   return (
-    <nav>
+    <>
       <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
@@ -168,6 +168,6 @@ export const NavBar: React.FC = () => {
           </Button>
         </div>
       </div>
-    </nav>
+    </>
   );
 };
