@@ -10,6 +10,7 @@
 
 body {
   @apply dark:bg-black dark:text-white;
+  overflow-x: hidden;
 }
 
 .gradient-circle {
@@ -74,4 +75,24 @@ body {
   left: 0;
   background: inherit;
   border-radius: inherit;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { Header, ServiceCard, Socials, WorkCard, Footer } from "@/components";
+import { ServiceCard, Socials, WorkCard, Footer } from "@/components";
 import { stagger } from "@/animations";
 
 // Local Data
@@ -8,29 +8,10 @@ import data from "../data/portfolio.json";
 
 export default function Home() {
   // Ref
-  const workRef = useRef<HTMLDivElement | HTMLHeadingElement | null>(null);
-  const aboutRef = useRef<HTMLDivElement | HTMLHeadingElement | null>(null);
   const textOne = useRef<HTMLHeadingElement | null>(null);
   const textTwo = useRef<HTMLHeadingElement | null>(null);
   const textThree = useRef<HTMLHeadingElement | null>(null);
   const textFour = useRef<HTMLHeadingElement | null>(null);
-
-  // Handling Scroll
-  const handleWorkScroll = () => {
-    window.scrollTo({
-      top: workRef.current?.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const handleAboutScroll = () => {
-    window.scrollTo({
-      top: aboutRef.current?.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
 
   useEffect(() => {
     stagger(
@@ -47,10 +28,6 @@ export default function Home() {
 
   return (
     <>
-      <Header
-        handleWorkScroll={handleWorkScroll}
-        handleAboutScroll={handleAboutScroll}
-      />
       <div className="laptop:mt-20 mt-10">
         <div className="mt-5">
           <h1
@@ -83,7 +60,7 @@ export default function Home() {
       </div>
       <div
         className="mt-10 laptop:mt-30 p-2 laptop:p-0"
-        ref={workRef}
+        id="workId"
       >
         <h1 className="text-2xl text-bold">Work.</h1>
         <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
@@ -112,7 +89,7 @@ export default function Home() {
       </div>
       <div
         className="mt-10 laptop:mt-40 p-2 laptop:p-0"
-        ref={aboutRef}
+        id="aboutId"
       >
         <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
         <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">

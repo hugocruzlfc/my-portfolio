@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { Providers } from "@/providers";
+import { NavBar } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,10 +32,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <main className="relative">
+          <main
+            className="relative"
+            data-lenis-prevent
+          >
             <div className="gradient-circle"></div>
             <div className="gradient-circle-bottom"></div>
-            <div className="container mx-auto mb-10">{children}</div>
+            <div className="container mx-auto mb-10">
+              <NavBar />
+              {children}
+            </div>
           </main>
         </Providers>
       </body>

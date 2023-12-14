@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Popover } from "@headlessui/react";
-import { useTheme } from "next-themes";
 import { useRouter, usePathname } from "next/navigation";
 import { Button } from "../Button";
 import Image from "next/image";
@@ -9,35 +8,20 @@ import data from "../../data/portfolio.json";
 import Link from "next/link";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import { useThemeContext } from "@/context";
+import { useLenis } from "@studio-freight/react-lenis";
 
-interface HeaderProps {
-  handleWorkScroll?: () => void;
-  handleAboutScroll?: () => void;
-}
-
-export const Header: React.FC<HeaderProps> = ({
-  handleWorkScroll,
-  handleAboutScroll,
-}) => {
+export const NavBar: React.FC = () => {
   const router = useRouter();
   const pathname = usePathname();
   const { resolvedTheme, setTheme } = useThemeContext();
-  const [mounted, setMounted] = useState(false);
+  const lenis = useLenis();
 
   const isResume = pathname === "/resume";
 
   const { name } = data;
 
-  // useEffect(() => {
-  //   setMounted(true);
-  // }, []);
-
-  // if (!mounted) {
-  //   return null;
-  // }
-
   return (
-    <>
+    <nav>
       <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
@@ -85,8 +69,34 @@ export const Header: React.FC<HeaderProps> = ({
               <div className="grid grid-cols-1">
                 {!isResume ? (
                   <>
-                    <Button onClick={handleWorkScroll}>Work</Button>
-                    <Button onClick={handleAboutScroll}>About</Button>
+                    <Button
+                      onClick={() =>
+                        lenis.scrollTo("#workId", {
+                          duration: 2,
+                          easing: (t) =>
+                            t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
+                        })
+                      }
+                    >
+                      Work
+                    </Button>
+                    <Button
+                      onClick={() =>
+                        lenis?.scrollTo("#aboutId", {
+                          duration: 2,
+                          easing: (t) =>
+                            t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
+                        })
+                      }
+                    >
+                      About
+                    </Button>
+                    <Button
+                      onClick={() => router.push("/resume")}
+                      classes="first:ml-1"
+                    >
+                      Resume
+                    </Button>
                   </>
                 ) : (
                   <Link href="/">
@@ -94,13 +104,7 @@ export const Header: React.FC<HeaderProps> = ({
                   </Link>
                 )}
 
-                <Button>Resume</Button>
-
-                <Button
-                  onClick={() => window.open("mailto:hello@chetanverma.com")}
-                >
-                  Contact
-                </Button>
+                <Button>Contact</Button>
               </div>
             </Popover.Panel>
           </>
@@ -120,8 +124,26 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex">
           {!isResume ? (
             <>
-              <Button onClick={handleWorkScroll}>Work</Button>
-              <Button onClick={handleAboutScroll}>About</Button>
+              <Button
+                onClick={() =>
+                  lenis.scrollTo("#workId", {
+                    duration: 2,
+                    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+                  })
+                }
+              >
+                Work
+              </Button>
+              <Button
+                onClick={() =>
+                  lenis?.scrollTo("#aboutId", {
+                    duration: 2,
+                    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+                  })
+                }
+              >
+                About
+              </Button>
               <Button
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
@@ -135,9 +157,7 @@ export const Header: React.FC<HeaderProps> = ({
             </Link>
           )}
 
-          <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
-            Contact
-          </Button>
+          <Button>Contact</Button>
 
           <Button
             onClick={() =>
@@ -148,6 +168,6 @@ export const Header: React.FC<HeaderProps> = ({
           </Button>
         </div>
       </div>
-    </>
+    </nav>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { Header, ProjectResume, Socials } from "@/components";
+import { ProjectResume, Socials } from "@/components";
 import { useTheme } from "next-themes";
 // Data
 import data from "../../data/portfolio.json";
@@ -13,7 +13,6 @@ export const Resume = () => {
 
   return (
     <>
-      <Header />
       <div className="mt-10 w-full flex flex-col items-center">
         <div
           className={`w-full ${
