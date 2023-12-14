@@ -1,9 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { Header, ServiceCard, Socials, WorkCard, Footer } from "@/components";
-
 import { stagger } from "@/animations";
-import Head from "next/head";
 
 // Local Data
 import data from "../data/portfolio.json";

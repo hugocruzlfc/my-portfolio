@@ -5,6 +5,7 @@ export * from "./Header";
 export * from "./ProjectResume";
 export * from "./Resume";
 export * from "./ServiceCard";
+export * from "./Skeletons";
 export * from "./Socials";
 export * from "./ThemeSwitcher";
 export * from "./WorkCard";

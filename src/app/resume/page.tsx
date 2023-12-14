@@ -1,4 +1,4 @@
-import { Resume } from "@/components";
+import { Resume, ResumeSkeleton } from "@/components";
 import { NextPage } from "next";
 import type { Metadata } from "next";
 

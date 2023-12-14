@@ -5,10 +5,11 @@ import { Header, ProjectResume, Socials } from "@/components";
 import { useTheme } from "next-themes";
 // Data
 import data from "../../data/portfolio.json";
+import { useThemeContext } from "@/context";
 
 export const Resume = () => {
   const { name, resume } = data;
-  const theme = useTheme();
+  const { resolvedTheme } = useThemeContext();
 
   return (
     <>
@@ -16,7 +17,7 @@ export const Resume = () => {
       <div className="mt-10 w-full flex flex-col items-center">
         <div
           className={`w-full ${
-            theme.theme === "dark" ? "bg-slate-800" : "bg-gray-50"
+            resolvedTheme === "dark" ? "bg-slate-800" : "bg-gray-50"
           } max-w-4xl p-20 mob:p-5 desktop:p-20 rounded-lg shadow-sm`}
         >
           <h1 className="text-3xl font-bold">{name}</h1>

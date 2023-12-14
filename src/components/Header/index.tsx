@@ -8,6 +8,7 @@ import Image from "next/image";
 import data from "../../data/portfolio.json";
 import Link from "next/link";
 import { ThemeSwitcher } from "../ThemeSwitcher";
+import { useThemeContext } from "@/context";
 
 interface HeaderProps {
   handleWorkScroll?: () => void;
@@ -20,20 +21,20 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const router = useRouter();
   const pathname = usePathname();
-  const { resolvedTheme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useThemeContext();
   const [mounted, setMounted] = useState(false);
 
   const isResume = pathname === "/resume";
 
   const { name } = data;
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setMounted(true);
+  // }, []);
 
-  if (!mounted) {
-    return null;
-  }
+  // if (!mounted) {
+  //   return null;
+  // }
 
   return (
     <>
