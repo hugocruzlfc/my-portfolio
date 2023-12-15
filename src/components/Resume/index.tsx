@@ -5,7 +5,6 @@ import { ProjectResume, Socials } from "@/components";
 import { useTheme } from "next-themes";
 // Data
 import data from "../../data/portfolio.json";
-import { useThemeContext } from "@/context";
 
 export const Resume = () => {
   const { name, resume } = data;
