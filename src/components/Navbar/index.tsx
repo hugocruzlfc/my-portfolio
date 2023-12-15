@@ -9,11 +9,12 @@ import Link from "next/link";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import { useThemeContext } from "@/context";
 import { useLenis } from "@studio-freight/react-lenis";
+import { useTheme } from "next-themes";
 
 export const NavBar: React.FC = () => {
   const router = useRouter();
   const pathname = usePathname();
-  const { resolvedTheme, setTheme } = useThemeContext();
+  const { resolvedTheme, setTheme } = useTheme();
   const lenis = useLenis();
 
   const isResume = pathname === "/resume";
@@ -115,7 +116,16 @@ export const NavBar: React.FC = () => {
           resolvedTheme === "light" && "bg-white"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
-        <Link href="/">
+        <Link
+          href="/"
+          className="flex items-center justify-center cursor-pointer gap-2"
+        >
+          <Image
+            src="/personal.png"
+            alt="Arrow"
+            width={65}
+            height={65}
+          />
           <h1 className="font-medium cursor-pointer mob:p-2 laptop:p-0">
             {name}
           </h1>
@@ -156,9 +166,7 @@ export const NavBar: React.FC = () => {
               <Button>Home</Button>
             </Link>
           )}
-
           <Button>Contact</Button>
-
           <Button
             onClick={() =>
               setTheme(resolvedTheme === "dark" ? "light" : "dark")

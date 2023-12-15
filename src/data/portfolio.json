@@ -10,21 +10,29 @@
   "socials": [
     {
       "id": "1",
-      "title": "Github",
-      "link": "https://github.com/hugocruzlfc"
+      "title": "Github Icon",
+      "link": "https://github.com/hugocruzlfc",
+      "url": "github.svg"
     },
     {
       "id": "2",
-      "title": "LinkedIn",
-      "link": "https://www.linkedin.com/in/hugo-cruz-7a0630197"
+      "title": "LinkedIn Icon",
+      "link": "https://www.linkedin.com/in/hugo-cruz-7a0630197",
+      "url": "linkedin.svg"
     },
     {
       "id": "3",
-      "title": "Twitter",
-      "link": "https://twitter.com/hugo_cruztorre"
+      "title": "X Icon",
+      "link": "https://twitter.com/hugo_cruztorre",
+      "url": "x.svg"
     },
 
-    { "id": "4", "title": "Email", "link": "mailto:hugocruzlfc@gmail.com" }
+    {
+      "id": "4",
+      "title": "Email Icon",
+      "link": "mailto:hugocruzlfc@gmail.com",
+      "url": ""
+    }
   ],
   "projects": [
     {

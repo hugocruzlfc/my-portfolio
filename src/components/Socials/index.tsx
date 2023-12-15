@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../Button";
-
+import Image from "next/image";
+import { MailIcon } from "../Icons";
 import yourData from "../../data/portfolio.json";
 
 interface SocialsProps {
@@ -15,7 +16,16 @@ export const Socials: React.FC<SocialsProps> = ({ className }) => {
           key={index}
           onClick={() => window.open(social.link)}
         >
-          {social.title}
+          {social.title === "Email Icon" ? (
+            <MailIcon />
+          ) : (
+            <Image
+              src={`/icons/${social.url}`}
+              alt={social.title}
+              width={24}
+              height={24}
+            />
+          )}
         </Button>
       ))}
     </div>

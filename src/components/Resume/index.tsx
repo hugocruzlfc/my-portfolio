@@ -9,7 +9,7 @@ import { useThemeContext } from "@/context";
 
 export const Resume = () => {
   const { name, resume } = data;
-  const { resolvedTheme } = useThemeContext();
+  const { resolvedTheme } = useTheme();
 
   return (
     <>

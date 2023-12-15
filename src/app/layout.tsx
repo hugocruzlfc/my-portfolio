@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "../styles/globals.css";
 import { Providers } from "@/providers";
 import { NavBar } from "@/components";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://my-portfolio-hugocruzlfc.vercel.app"),
@@ -23,6 +22,8 @@ export const metadata: Metadata = {
   },
 };
 
+const cx = (...classes: string[]) => classes.filter(Boolean).join(" ");
+
 export default function RootLayout({
   children,
 }: {
@@ -30,7 +31,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={cx(
+          "text-black bg-white dark:text-white dark:bg-[#111010]",
+          GeistSans.variable,
+          GeistMono.variable
+        )}
+      >
         <Providers>
           <main
             className="relative"
