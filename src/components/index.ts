@@ -2,6 +2,7 @@ export * from "./Button";
 export * from "./ContentSection";
 export * from "./Footer";
 export * from "./Icons";
+export * from "./Loaders";
 export * from "./Navbar";
 export * from "./ProjectResume";
 export * from "./Resume";

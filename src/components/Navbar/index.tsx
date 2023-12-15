@@ -1,15 +1,14 @@
 "use client";
 import React from "react";
 import { Popover } from "@headlessui/react";
-import { useRouter, usePathname } from "next/navigation";
-import { Button } from "../Button";
-import Image from "next/image";
-import data from "../../data/portfolio.json";
-import Link from "next/link";
-import { ThemeSwitcher } from "../ThemeSwitcher";
-import { useThemeContext } from "@/context";
-import { useLenis } from "@studio-freight/react-lenis";
 import { useTheme } from "next-themes";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
+import { useLenis } from "@studio-freight/react-lenis";
+import { Button } from "../Button";
+import data from "../../data/portfolio.json";
+import { ThemeSwitcher } from "../ThemeSwitcher";
 
 export const NavBar: React.FC = () => {
   const router = useRouter();
@@ -44,20 +43,10 @@ export const NavBar: React.FC = () => {
                 </Button>
 
                 <Popover.Button>
-                  <Image
-                    className="h-5"
-                    src={`/icons/${
-                      !open
-                        ? resolvedTheme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
-                        : resolvedTheme === "light"
-                        ? "cancel.svg"
-                        : "cancel-white.svg"
-                    }`}
-                    alt="Menu button"
-                    width={24}
-                    height={24}
+                  <ThemeSwitcher
+                    theme={resolvedTheme}
+                    isMenuButton
+                    open={open}
                   />
                 </Popover.Button>
               </div>
