@@ -4,17 +4,24 @@ import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useLenis } from "@studio-freight/react-lenis";
 import { Button } from "../Button";
 import data from "../../data/portfolio.json";
 import { ThemeSwitcher } from "../ThemeSwitcher";
+import { useTranslations } from "next-intl";
+import { LocaleSwitcher } from "../LocaleSwitcher";
+import { usePathname } from "@/utils";
+import { CollapsedButton } from "../CollapsedButton";
+import { Profile } from "../Profile";
 
 export const NavBar: React.FC = () => {
   const router = useRouter();
   const pathname = usePathname();
-  const { resolvedTheme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   const lenis = useLenis();
+
+  const t = useTranslations("NavLinks");
 
   const isResume = pathname === "/resume";
 
@@ -26,26 +33,21 @@ export const NavBar: React.FC = () => {
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
-              <h1
-                onClick={() => router.push("/")}
-                className="font-medium p-2 laptop:p-0 link"
-              >
-                {name}.
-              </h1>
-
+              <Profile
+                name={name}
+                collapsed
+              />
               <div className="flex items-center">
                 <Button
-                  onClick={() =>
-                    setTheme(resolvedTheme === "dark" ? "light" : "dark")
-                  }
+                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 >
-                  <ThemeSwitcher theme={resolvedTheme} />
+                  <ThemeSwitcher theme={theme} />
                 </Button>
+                <LocaleSwitcher />
 
                 <Popover.Button>
-                  <ThemeSwitcher
-                    theme={resolvedTheme}
-                    isMenuButton
+                  <CollapsedButton
+                    theme={theme}
                     open={open}
                   />
                 </Popover.Button>
@@ -53,7 +55,7 @@ export const NavBar: React.FC = () => {
             </div>
             <Popover.Panel
               className={`absolute right-0 z-10 w-11/12 p-4 ${
-                resolvedTheme === "dark" ? "bg-slate-800" : "bg-white"
+                theme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
               <div className="grid grid-cols-1">
@@ -68,7 +70,7 @@ export const NavBar: React.FC = () => {
                         })
                       }
                     >
-                      Work
+                      {t("work")}
                     </Button>
                     <Button
                       onClick={() =>
@@ -79,22 +81,22 @@ export const NavBar: React.FC = () => {
                         })
                       }
                     >
-                      About
+                      {t("about")}
                     </Button>
                     <Button
                       onClick={() => router.push("/resume")}
                       classes="first:ml-1"
                     >
-                      Resume
+                      {t("resume")}
                     </Button>
                   </>
                 ) : (
                   <Link href="/">
-                    <Button>Home</Button>
+                    <Button>{t("home")}</Button>
                   </Link>
                 )}
 
-                <Button>Contact</Button>
+                <Button>{t("contact")}</Button>
               </div>
             </Popover.Panel>
           </>
@@ -102,23 +104,10 @@ export const NavBar: React.FC = () => {
       </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          resolvedTheme === "light" && "bg-white"
+          theme === "light" && "bg-white"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
-        <Link
-          href="/"
-          className="flex items-center justify-center cursor-pointer gap-2"
-        >
-          <Image
-            src="/personal.png"
-            alt="Arrow"
-            width={65}
-            height={65}
-          />
-          <h1 className="font-medium cursor-pointer mob:p-2 laptop:p-0">
-            {name}
-          </h1>
-        </Link>
+        <Profile name={name} />
 
         <div className="flex">
           {!isResume ? (
@@ -131,7 +120,7 @@ export const NavBar: React.FC = () => {
                   })
                 }
               >
-                Work
+                {t("work")}
               </Button>
               <Button
                 onClick={() =>
@@ -141,27 +130,24 @@ export const NavBar: React.FC = () => {
                   })
                 }
               >
-                About
+                {t("about")}
               </Button>
               <Button
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
               >
-                Resume
+                {t("resume")}
               </Button>
             </>
           ) : (
             <Link href="/">
-              <Button>Home</Button>
+              <Button>{t("home")}</Button>
             </Link>
           )}
-          <Button>Contact</Button>
-          <Button
-            onClick={() =>
-              setTheme(resolvedTheme === "dark" ? "light" : "dark")
-            }
-          >
-            <ThemeSwitcher theme={resolvedTheme} />
+          <Button> {t("contact")}</Button>
+          <LocaleSwitcher />
+          <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            <ThemeSwitcher theme={theme} />
           </Button>
         </div>
       </div>

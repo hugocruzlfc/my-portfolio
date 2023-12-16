@@ -1,0 +1,36 @@
+{
+  "MainLayout": {
+    "template": "Portafolio de Hugo",
+    "default": "Portafolio de Hugo",
+    "description": "Sitio Web del Portafolio de Hugo Cruz"
+  },
+  "ResumeLayout": {
+    "title": "Currículum"
+  },
+  "IndexPage": {
+    "title": "Inicio",
+    "headerTaglineOne": "Hola 👋",
+    "headerTaglineTwo": "Soy Hugo Cruz,",
+    "headerTaglineThree": "programador web full stack",
+    "headerTaglineFour": "con sede en Barcelona, España."
+  },
+  "LocaleLayout": {
+    "title": "next-intl example"
+  },
+  "NavLinks": {
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "work": "Trabajos",
+    "resume": "Currículo",
+    "contact": "Contacto"
+  },
+
+  "NotFoundPage": {
+    "title": "Página no encontrada",
+    "description": "Compruebe la barra de direcciones del navegador o utilice la navegación para ir a una página conocida."
+  },
+  "LocaleSwitcher": {
+    "label": "Cambiar idioma",
+    "locale": "{locale, select, es {ES} en {EN} other {Unknown}}"
+  }
+}

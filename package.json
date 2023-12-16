@@ -11,9 +11,11 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@studio-freight/react-lenis": "^0.0.38",
+    "clsx": "^2.0.0",
     "geist": "^1.2.0",
     "gsap": "^3.12.3",
     "next": "14.0.4",
+    "next-intl": "^3.3.2",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",

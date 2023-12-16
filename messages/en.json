@@ -1,0 +1,32 @@
+{
+  "MainLayout": {
+    "template": "Hugo's Portfolio",
+    "default": "Hugo's Portfolio",
+    "description": "Hugo's Portfolio Website"
+  },
+  "ResumeLayout": {
+    "title": "Resume"
+  },
+  "IndexPage": {
+    "title": "Home",
+    "headerTaglineOne": "Hello 👋",
+    "headerTaglineTwo": "I'm Hugo Cruz,",
+    "headerTaglineThree": "full stack web programmer",
+    "headerTaglineFour": " based in Barcelona, Spain."
+  },
+  "NavLinks": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, es {ES} en {EN} other {Unknown}}"
+  }
+}

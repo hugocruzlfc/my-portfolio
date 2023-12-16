@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Spinner } from "../Loaders";
 
 export interface ThemeSwitcherProps {
   theme?: string;
@@ -14,15 +13,6 @@ export const ThemeSwitcher: React.FC<ThemeSwitcherProps> = ({
   isMenuButton,
   open,
 }) => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return <Spinner />;
-  }
   return (
     <>
       {isMenuButton ? (

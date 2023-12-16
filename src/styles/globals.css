@@ -93,7 +93,7 @@ html.lenis {
 }
 /* Estilos para la barra de desplazamiento */
 ::-webkit-scrollbar {
-  width: 8px; /* Ancho de la barra de desplazamiento */
+  width: 10px; /* Ancho de la barra de desplazamiento */
 }
 
 /* Oculta el fondo de la barra de desplazamiento */
@@ -103,7 +103,7 @@ html.lenis {
 
 /* Pulgar de la barra de desplazamiento */
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color del "pulgar" de la barra de desplazamiento */
+  background-color: #989c9a; /* Color del "pulgar" de la barra de desplazamiento */
   border-radius: 5px; /* Bordes redondeados del pulgar */
   /* Altura del pulgar */
 }
