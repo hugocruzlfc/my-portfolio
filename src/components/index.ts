@@ -1,7 +1,8 @@
 export * from "./About";
 export * from "./Button";
 export * from "./CollapsedButton";
-export * from "./ContentSection";
+export { default as Contact } from "./Contact";
+export * from "./EmailContactForm";
 export * from "./Footer";
 export * from "./Home";
 export * from "./Icons";
@@ -16,5 +17,6 @@ export * from "./SectionHeading";
 export * from "./ServiceCard";
 export * from "./Skeletons";
 export * from "./Socials";
+export * from "./SubmitBtn";
 export * from "./ThemeSwitcher";
 export * from "./WorkCard";

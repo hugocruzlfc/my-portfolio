@@ -2,7 +2,6 @@
 import React from "react";
 import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useLenis } from "@studio-freight/react-lenis";
@@ -24,8 +23,75 @@ export const NavBar: React.FC = () => {
   const t = useTranslations("NavLinks");
 
   const isResume = pathname === "/resume";
+  const isContact = pathname === "/contact";
+  const isHome = pathname === "/";
 
   const { name } = data;
+
+  const handleNavigatePage = () => {
+    if (isResume) {
+      router.push("/contact");
+    } else if (isContact) {
+      router.push("/resume");
+    }
+  };
+
+  const renderNavigateLabels = () => {
+    if (isResume) {
+      return t("contact");
+    } else if (isContact) {
+      return t("resume");
+    }
+  };
+
+  const renderButtons = () => {
+    return (
+      <>
+        {isHome ? (
+          <>
+            <Button
+              onClick={() =>
+                lenis?.scrollTo("#aboutId", {
+                  duration: 2,
+                  easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+                })
+              }
+            >
+              {t("about")}
+            </Button>
+            <Button
+              onClick={() =>
+                lenis.scrollTo("#workId", {
+                  duration: 2,
+                  easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+                })
+              }
+            >
+              {t("work")}
+            </Button>
+            <Button
+              onClick={() => router.push("/resume")}
+              classes="first:ml-1"
+            >
+              {t("resume")}
+            </Button>
+            <Button onClick={() => router.push("/contact")}>
+              {t("contact")}
+            </Button>
+          </>
+        ) : (
+          <>
+            <Link href="/">
+              <Button>{t("home")}</Button>
+            </Link>
+            <Button onClick={handleNavigatePage}>
+              {renderNavigateLabels()}
+            </Button>
+          </>
+        )}
+      </>
+    );
+  };
 
   return (
     <>
@@ -58,46 +124,7 @@ export const NavBar: React.FC = () => {
                 theme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
-              <div className="grid grid-cols-1">
-                {!isResume ? (
-                  <>
-                    <Button
-                      onClick={() =>
-                        lenis?.scrollTo("#aboutId", {
-                          duration: 2,
-                          easing: (t) =>
-                            t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
-                        })
-                      }
-                    >
-                      {t("about")}
-                    </Button>
-                    <Button
-                      onClick={() =>
-                        lenis.scrollTo("#workId", {
-                          duration: 2,
-                          easing: (t) =>
-                            t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
-                        })
-                      }
-                    >
-                      {t("work")}
-                    </Button>
-                    <Button
-                      onClick={() => router.push("/resume")}
-                      classes="first:ml-1"
-                    >
-                      {t("resume")}
-                    </Button>
-                  </>
-                ) : (
-                  <Link href="/">
-                    <Button>{t("home")}</Button>
-                  </Link>
-                )}
-
-                <Button>{t("contact")}</Button>
-              </div>
+              <div className="grid grid-cols-1">{renderButtons()}</div>
             </Popover.Panel>
           </>
         )}
@@ -108,41 +135,8 @@ export const NavBar: React.FC = () => {
         <Profile name={name} />
 
         <div className="flex">
-          {!isResume ? (
-            <>
-              <Button
-                onClick={() =>
-                  lenis?.scrollTo("#aboutId", {
-                    duration: 2,
-                    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-                  })
-                }
-              >
-                {t("about")}
-              </Button>
-              <Button
-                onClick={() =>
-                  lenis.scrollTo("#workId", {
-                    duration: 2,
-                    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-                  })
-                }
-              >
-                {t("work")}
-              </Button>
-              <Button
-                onClick={() => router.push("/resume")}
-                classes="first:ml-1"
-              >
-                {t("resume")}
-              </Button>
-            </>
-          ) : (
-            <Link href="/">
-              <Button>{t("home")}</Button>
-            </Link>
-          )}
-          <Button> {t("contact")}</Button>
+          {renderButtons()}
+
           <LocaleSwitcher />
           <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             <ThemeSwitcher theme={theme} />

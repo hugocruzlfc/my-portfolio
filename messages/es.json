@@ -7,6 +7,10 @@
   "ResumeLayout": {
     "title": "Currículum"
   },
+  "ContactLayout": {
+    "title": "Contacto",
+    "submitBtn": "Enviar"
+  },
   "IndexPage": {
     "title": "Inicio",
     "headerTaglineOne": "Hola 👋",
@@ -44,5 +48,16 @@
     "about": "Acerca de este sitio web:",
     "built": "creado con",
     "hosting": "y alojamiento de Vercel"
+  },
+  "SubmitBtn": {
+    "submit": "Enviar"
+  },
+  "ContactForm": {
+    "title": "Contacte conmigo",
+    "descriptionOne": "Póngase en contacto conmigo directamente en",
+    "descriptionTwo": "o a través de este formulario.",
+    "toast": "Correo electrónico enviado correctamente!",
+    "emailPlaceHolder": "Tu email",
+    "textAreaPlaceHolder": "Tu mensaje"
   }
 }

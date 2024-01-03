@@ -7,6 +7,9 @@
   "ResumeLayout": {
     "title": "Resume"
   },
+  "ContactLayout": {
+    "title": "Contact"
+  },
   "IndexPage": {
     "title": "Home",
     "headerTaglineOne": "Hello 👋",
@@ -40,5 +43,16 @@
     "about": "About this website:",
     "built": "built with",
     "hosting": "and Vercel hosting"
+  },
+  "SubmitBtn": {
+    "submit": "Submit"
+  },
+  "ContactForm": {
+    "title": "Contact me",
+    "descriptionOne": "Please contact me directly at",
+    "descriptionTwo": "or through this form.",
+    "toast": "Email sent successfully!",
+    "emailPlaceHolder": "Your email",
+    "textAreaPlaceHolder": "Your message"
   }
 }

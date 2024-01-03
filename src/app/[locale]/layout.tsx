@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import clsx from "clsx";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { Toaster } from "react-hot-toast";
 
 type Props = {
   children: React.ReactNode;
@@ -63,6 +64,7 @@ export default async function LocaleLayout({
                 <NavBar />
                 {children}
                 <Footer />
+                <Toaster position="top-right" />
               </div>
             </main>
           </NextIntlClientProvider>
