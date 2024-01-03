@@ -11,6 +11,7 @@ export * from "./Navbar";
 export * from "./Profile";
 export * from "./ProjectResume";
 export * from "./Resume";
+export * from "./SectionDivider";
 export * from "./SectionHeading";
 export * from "./ServiceCard";
 export * from "./Skeletons";

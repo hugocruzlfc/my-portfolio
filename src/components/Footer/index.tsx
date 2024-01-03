@@ -1,28 +1,21 @@
+"use client";
+
 import React from "react";
-import { Socials } from "../Socials";
-import Link from "next/link";
-import { Button } from "../Button";
+import { useTranslations } from "next-intl";
 
 export const Footer: React.FC = () => {
+  const t = useTranslations("Footer");
+
   return (
-    <>
-      <div className="mt-5 laptop:mt-40 p-2 laptop:p-0">
-        <div>
-          <h1 className="text-2xl text-bold">Contact.</h1>
-          <div className="mt-10">
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              LET&apos;S WORK
-            </h1>
-            <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">
-              TOGETHER
-            </h1>
-            <Button type="primary">Schedule a call</Button>
-            <div className="mt-10">
-              <Socials />
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    <footer className="mb-10 px-4 text-center text-gray-500 mt-20">
+      <small className="mb-2 block text-xs">
+        &copy; 2023 Hugo Cruz de la Torres. {t("rights")}
+      </small>
+      <p className="text-xs">
+        <span className="font-semibold">{t("about")}</span> {t("built")} React &
+        Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer
+        Motion, React Email & Resend, {t("hosting")}.
+      </p>
+    </footer>
   );
 };

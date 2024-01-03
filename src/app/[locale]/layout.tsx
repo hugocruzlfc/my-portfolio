@@ -1,7 +1,7 @@
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Providers } from "@/providers";
-import { NavBar } from "@/components";
+import { Footer, NavBar } from "@/components";
 import { notFound } from "next/navigation";
 import clsx from "clsx";
 import { NextIntlClientProvider } from "next-intl";
@@ -62,6 +62,7 @@ export default async function LocaleLayout({
               <div className="container mx-auto mb-10">
                 <NavBar />
                 {children}
+                <Footer />
               </div>
             </main>
           </NextIntlClientProvider>

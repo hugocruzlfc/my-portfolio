@@ -38,5 +38,11 @@
     "paragraphOne": "Tras licenciarme en Ciencias de la Computación en el año 2014, decidí seguir aprendiendo y dedicarme a mi pasión por la programación. Decidí profundizar en el lenguaje Javascript y me matriculé en varios cursos de programación web full-stack para actualizarme y elevar mi nivel, en donde pude adquirir conocimientos sobre disímiles frameworks y tecnologías, además de profundizar en la resolución de problemas reales y actuales.",
     "paragraphTwo": "Mi parte favorita de la programación es la resolución de problemas. Me encanta la sensación de encontrar, o aportar, una solución a un problema. Mi stack principal es React, Next.js, Node.js, Typescript y Postgres. También estoy familiarizado con Angular, MongoDB Prisma entre otros. Siempre estoy buscando aprender nuevas tecnologías.",
     "paragraphThree": "Cuando no estoy programando, me gusta jugar a videojuegos, ver películas, leer y entrenar en el gym. A ratos también patino, pesco, y de manera general disfruto de cada momento en mi vida."
+  },
+  "Footer": {
+    "rights": "Todos los derechos reservados.",
+    "about": "Acerca de este sitio web:",
+    "built": "creado con",
+    "hosting": "y alojamiento de Vercel"
   }
 }

@@ -63,17 +63,6 @@ export const NavBar: React.FC = () => {
                   <>
                     <Button
                       onClick={() =>
-                        lenis.scrollTo("#workId", {
-                          duration: 2,
-                          easing: (t) =>
-                            t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
-                        })
-                      }
-                    >
-                      {t("work")}
-                    </Button>
-                    <Button
-                      onClick={() =>
                         lenis?.scrollTo("#aboutId", {
                           duration: 2,
                           easing: (t) =>
@@ -82,6 +71,17 @@ export const NavBar: React.FC = () => {
                       }
                     >
                       {t("about")}
+                    </Button>
+                    <Button
+                      onClick={() =>
+                        lenis.scrollTo("#workId", {
+                          duration: 2,
+                          easing: (t) =>
+                            t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
+                        })
+                      }
+                    >
+                      {t("work")}
                     </Button>
                     <Button
                       onClick={() => router.push("/resume")}
@@ -112,16 +112,6 @@ export const NavBar: React.FC = () => {
             <>
               <Button
                 onClick={() =>
-                  lenis.scrollTo("#workId", {
-                    duration: 2,
-                    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-                  })
-                }
-              >
-                {t("work")}
-              </Button>
-              <Button
-                onClick={() =>
                   lenis?.scrollTo("#aboutId", {
                     duration: 2,
                     easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
@@ -129,6 +119,16 @@ export const NavBar: React.FC = () => {
                 }
               >
                 {t("about")}
+              </Button>
+              <Button
+                onClick={() =>
+                  lenis.scrollTo("#workId", {
+                    duration: 2,
+                    easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+                  })
+                }
+              >
+                {t("work")}
               </Button>
               <Button
                 onClick={() => router.push("/resume")}
