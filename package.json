@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@react-email/components": "^0.0.12",
+    "@react-email/tailwind": "^0.0.13",
     "@studio-freight/react-lenis": "^0.0.38",
     "clsx": "^2.0.0",
+    "framer-motion": "^10.17.0",
     "geist": "^1.2.0",
     "gsap": "^3.12.3",
     "next": "14.0.4",
@@ -19,14 +22,19 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.12.0",
     "react-markdown": "^9.0.1",
-    "react-syntax-highlighter": "^15.5.0"
+    "react-syntax-highlighter": "^15.5.0",
+    "react-vertical-timeline-component": "^3.6.0",
+    "resend": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-syntax-highlighter": "^15.5.11",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",

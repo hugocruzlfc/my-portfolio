@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
-import { ServiceCard, Socials, WorkCard, Footer } from "@/components";
+import { ServiceCard, Socials, WorkCard, Footer, About } from "@/components";
 import { stagger } from "@/animations";
 
 // Local Data
@@ -62,43 +62,48 @@ export const Home: React.FC = () => {
 
         <Socials className="mt-2 laptop:mt-5" />
       </div>
-      <div
-        className="mt-10 laptop:mt-30 p-2 laptop:p-0"
-        id="workId"
-      >
-        <h1 className="text-2xl text-bold">Work.</h1>
-        <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-          {data.projects.map((project) => (
-            <WorkCard
-              key={project.id}
-              img={project.imageSrc}
-              name={project.title}
-              description={project.description}
-              onClick={() => window.open(project.url)}
-            />
-          ))}
+      <div className="flex flex-col items-center px-4">
+        <div
+          className="mt-10 laptop:mt-30 p-2 laptop:p-0"
+          id="workId"
+        >
+          <h1 className="text-2xl text-bold">Work.</h1>
+          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+            {data.projects.map((project) => (
+              <WorkCard
+                key={project.id}
+                img={project.imageSrc}
+                name={project.title}
+                description={project.description}
+                onClick={() => window.open(project.url)}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-        <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
-        <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
-          {data.services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              name={service.title}
-              description={service.description}
-            />
-          ))}
+        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
+          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
+            {data.services.map((service, index) => (
+              <ServiceCard
+                key={index}
+                name={service.title}
+                description={service.description}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      <div
-        className="mt-10 laptop:mt-40 p-2 laptop:p-0"
-        id="aboutId"
-      >
-        <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
+        <About />
+        {/* <div
+          className="mt-10 laptop:mt-40 p-2 laptop:p-0"
+          id="aboutId"
+        >
+          {/* <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
         <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
-          {data.aboutpara}
-        </p>
+          {data.about}
+        </p> *
+          {data.about}
+        
+        </div> */}
       </div>
       <Footer />
     </>

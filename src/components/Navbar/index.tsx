@@ -103,9 +103,7 @@ export const NavBar: React.FC = () => {
         )}
       </Popover>
       <div
-        className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          theme === "light" && "bg-white"
-        } dark:text-white top-0 z-10 tablet:flex`}
+        className={`mt-10 hidden flex-row items-center justify-between sticky  dark:text-white top-0 z-10 tablet:flex`}
       >
         <Profile name={name} />
 

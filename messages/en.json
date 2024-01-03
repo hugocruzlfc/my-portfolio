@@ -28,5 +28,11 @@
   "LocaleSwitcher": {
     "label": "Change language",
     "locale": "{locale, select, es {ES} en {EN} other {Unknown}}"
+  },
+  "AboutSection": {
+    "title": "About",
+    "paragraphOne": "After graduating in Computer Science in 2014, I decided to continue learning and dedicate myself to my passion for programming. I decided to delve into the Javascript language and enrolled in several full-stack web programming courses to update and raise my level, where I could acquire knowledge about different frameworks and technologies, in addition to deepening in solving real and current problems.",
+    "paragraphTwo": "My favorite part of programming is problem solving. I love the feeling of finding, or providing, a solution to a problem. My main stack is React, Next.js, Node.js, Typescript and Postgres. I am also familiar with Angular, MongoDB, Prisma among others. I'm always looking to learn new technologies.",
+    "paragraphThree": "When I'm not programming, I like to play video games, watch movies, read and work out at the gym. I also skateboard, fish, and generally enjoy every moment in my life."
   }
 }
