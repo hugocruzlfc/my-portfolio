@@ -16,6 +16,8 @@ export * from "./SectionDivider";
 export * from "./SectionHeading";
 export * from "./ServiceCard";
 export * from "./Skeletons";
+export * from "./SkillSection";
+export * from "./Skills";
 export * from "./Socials";
 export * from "./SubmitBtn";
 export * from "./ThemeSwitcher";

@@ -7,6 +7,7 @@ import {
   WorkCard,
   About,
   SectionDivider,
+  Skills,
 } from "@/components";
 import { stagger } from "@/animations";
 
@@ -69,6 +70,7 @@ export const Home: React.FC = () => {
       <Socials />
       <SectionDivider />
       <About />
+      <Skills />
       <div
         className="mt-10 laptop:mt-30 p-2 laptop:p-0"
         id="workId"
@@ -85,6 +87,7 @@ export const Home: React.FC = () => {
             />
           ))}
         </div>
+        Skills
       </div>
       <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
         <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>

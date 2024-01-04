@@ -59,5 +59,11 @@
     "toast": "Correo electrónico enviado correctamente!",
     "emailPlaceHolder": "Tu email",
     "textAreaPlaceHolder": "Tu mensaje"
+  },
+  "Skills": {
+    "title": "Mis habilidades",
+    "frameworks": "Frameworks",
+    "others": "Otros",
+    "languages": "Lenguajes"
   }
 }

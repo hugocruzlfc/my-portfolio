@@ -33,9 +33,9 @@ export default function Contact() {
         {t("descriptionOne")}{" "}
         <a
           className="underline"
-          href="mailto:example@gmail.com"
+          href="mailto:hugocruzlfc@gmail.com"
         >
-          example@gmail.com
+          hugocruzlfc@gmail.com
         </a>{" "}
         {t("descriptionTwo")}
       </p>
