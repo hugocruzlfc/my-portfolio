@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use } from "react";
 import {
   Html,
   Body,
@@ -34,7 +34,7 @@ export const EmailContactForm: React.FC<ContactFormEmailProps> = ({
               </Heading>
               <Text>{message}</Text>
               <Hr />
-              <Text>The sender's email is: {senderEmail}</Text>
+              <Text>The sender&apos;s email is: {senderEmail}</Text>
             </Section>
           </Container>
         </Body>
