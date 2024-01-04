@@ -39,7 +39,7 @@
   },
   "AboutSection": {
     "title": "Sobre mi",
-    "paragraphOne": "Tras licenciarme en Ciencias de la Computación en el año 2014, decidí seguir aprendiendo y dedicarme a mi pasión por la programación. Decidí profundizar en el lenguaje Javascript y me matriculé en varios cursos de programación web full-stack para actualizarme y elevar mi nivel, en donde pude adquirir conocimientos sobre disímiles frameworks y tecnologías, además de profundizar en la resolución de problemas reales y actuales.",
+    "paragraphOne": "Tras licenciarme en Ciencias de la Computación en el año 2014, me propuse seguir aprendiendo y dedicarme a mi pasión por la programación. Decidí profundizar en la programación y desarrollo web mediante el lenguaje Javascript; tanto de manera autodidacta como a través de varios cursos full-stack para actualizar y elevar mi nivel, en donde pude adquirir conocimientos sobre disímiles frameworks y tecnologías, además de profundizar en la resolución de problemas reales y actuales.",
     "paragraphTwo": "Mi parte favorita de la programación es la resolución de problemas. Me encanta la sensación de encontrar, o aportar, una solución a un problema. Mi stack principal es React, Next.js, Node.js, Typescript y Postgres. También estoy familiarizado con Angular, MongoDB Prisma entre otros. Siempre estoy buscando aprender nuevas tecnologías.",
     "paragraphThree": "Cuando no estoy programando, me gusta jugar a videojuegos, ver películas, leer y entrenar en el gym. A ratos también patino, pesco, y de manera general disfruto de cada momento en mi vida."
   },
@@ -65,5 +65,18 @@
     "frameworks": "Frameworks",
     "others": "Otros",
     "languages": "Lenguajes"
+  },
+  "Projects": {
+    "title": "Mis proyectos",
+    "aclName": "Panel de Administración de Geocercas",
+    "achsName": "Portal de Coordinacion Común",
+    "sitaName": "Controlador de Misión",
+    "svdName": "Sitio web de SVD",
+    "iberiaName": "Módulo TAM de Pag & Bag",
+    "aclDescription": "Trabajé como desarrollador full-stack en este proyecto de startup durante 8 meses. Un panel para administrar geocercas.",
+    "achsDescription": "Tablero para trabajadores y pacientes del sistema de salúd de Chile. Tiene características como filtrado, clasificación y paginación.",
+    "sitaDescription": "Aplicación para gestionar los vuelos y desvíos de las compañías aéreas. También permite la interacción entre la tripulación de cabina y los coordinadores de vuelo. Utiliza la api Graph de Microsoft.",
+    "svdDescription": "Comercio electrónico de la empresa SVD. Actualizado de Magento a las tecnologías líderes del mercado. Cuenta con muchas de las mejores integraciones del momento.",
+    "iberiaDescription": "Aplicación para administrar los pasajeros y maletas usada  por los agentes coordinadores de IBERIA. Consume y procesa  datos en tiempo real."
   }
 }

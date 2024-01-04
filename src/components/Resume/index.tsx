@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectResume, Skills, Socials } from "@/components";
+import { ProjectResume, Socials } from "@/components";
 
 // Data
 import data from "../../data/portfolio.json";
@@ -44,9 +44,6 @@ export const Resume = () => {
                 {resume.education.universityPara}
               </p>
             </div>
-          </div>
-          <div className="mt-10">
-            <Skills />
           </div>
         </div>
       </div>
