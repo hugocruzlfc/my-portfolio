@@ -5,7 +5,7 @@ import { ProjectResume, Socials } from "@/components";
 import data from "../../data/portfolio.json";
 
 export const Resume = () => {
-  const { name, resume } = data;
+  const { resume } = data;
 
   return (
     <>

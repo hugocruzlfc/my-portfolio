@@ -70,6 +70,16 @@ export const NavBar: React.FC = () => {
               {t("work")}
             </Button>
             <Button
+              onClick={() =>
+                lenis.scrollTo("#skillId", {
+                  duration: 2,
+                  easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+                })
+              }
+            >
+              {t("skills")}
+            </Button>
+            <Button
               onClick={() => router.push("/resume")}
               classes="first:ml-1"
             >

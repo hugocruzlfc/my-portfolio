@@ -11,7 +11,7 @@ export function Skills() {
 
   return (
     <section
-      id="skills"
+      id="skillId"
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>{t("title")}</SectionHeading>

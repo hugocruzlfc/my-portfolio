@@ -10,7 +10,7 @@ export const Projects: React.FC = ({}) => {
   const t = useTranslations("Projects");
   return (
     <section
-      id="projects"
+      id="workId"
       className="scroll-mt-28 mb-28"
     >
       <SectionHeading>{t("title")}</SectionHeading>
