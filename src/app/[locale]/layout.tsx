@@ -33,7 +33,7 @@ export async function generateMetadata({
       images: [
         {
           url: "https://my-portfolio-hugocruzlfc.vercel.app/api/static",
-          alt: "Hugo Cruz's Portfolio",
+          alt: "My projects, skills and contact information",
         },
       ],
     },
