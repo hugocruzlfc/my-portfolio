@@ -32,10 +32,14 @@ export async function generateMetadata({
       locale: "en_US",
       images: [
         {
-          url: "https://my-portfolio-hugocruzlfc.vercel.app/api/og",
+          url: "https://my-portfolio-hugocruzlfc.vercel.app/api/static",
           alt: "Hugo Cruz's Portfolio",
         },
       ],
+    },
+    twitter: {
+      title: "Hugo Cruz's Portfolio",
+      card: "summary_large_image",
     },
   };
 }
