@@ -13,12 +13,15 @@ import { LocaleSwitcher } from "../LocaleSwitcher";
 import { usePathname } from "@/utils";
 import { CollapsedButton } from "../CollapsedButton";
 import { Profile } from "../Profile";
+import { pathnames } from "@/utils";
 
 export const NavBar: React.FC = () => {
   const router = useRouter();
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   const lenis = useLenis();
+
+  const pathRoutes = Object.keys(pathnames);
 
   const t = useTranslations("NavLinks");
 
@@ -94,9 +97,11 @@ export const NavBar: React.FC = () => {
             <Link href="/">
               <Button>{t("home")}</Button>
             </Link>
-            <Button onClick={handleNavigatePage}>
-              {renderNavigateLabels()}
-            </Button>
+            {pathRoutes.includes(pathname) && (
+              <Button onClick={handleNavigatePage}>
+                {renderNavigateLabels()}
+              </Button>
+            )}
           </>
         )}
       </>

@@ -24,6 +24,19 @@ export async function generateMetadata({
       default: t("default"),
     },
     description: t("description"),
+    openGraph: {
+      title: t("default"),
+      description: t("description"),
+      type: "website",
+      siteName: t("default"),
+      locale: "en_US",
+      images: [
+        {
+          url: "https://my-portfolio-hugocruzlfc.vercel.app/api/og",
+          alt: "Hugo Cruz's Portfolio",
+        },
+      ],
+    },
   };
 }
 
