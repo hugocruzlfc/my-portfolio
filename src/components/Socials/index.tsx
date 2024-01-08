@@ -1,17 +1,15 @@
 "use client";
 import React from "react";
-import { Button } from "../Button";
-import Image from "next/image";
-import { MailIcon } from "../Icons";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { MdOutlineEmail } from "react-icons/md";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
 
 export const Socials: React.FC = () => {
+  const t = useTranslations("Buttons");
   return (
     <section className="max-w-[50rem] text-center  scroll-mt-[100rem] mb-28 tablet:mb-0 laptop:mb-0 mt-20">
       <motion.div
@@ -26,7 +24,7 @@ export const Socials: React.FC = () => {
           href="/contact"
           className="group bg-gray-950 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here{" "}
+          {t("contact")}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -35,7 +33,7 @@ export const Socials: React.FC = () => {
           href="/CV-Hugo Cruz de la Torre.pdf"
           download
         >
-          Download CV{" "}
+          {t("downloadCV")}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 

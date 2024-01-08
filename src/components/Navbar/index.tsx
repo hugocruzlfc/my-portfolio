@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useLenis } from "@studio-freight/react-lenis";
 import { Button } from "../Button";
-import data from "../../data/portfolio.json";
 import { ThemeSwitcher } from "../ThemeSwitcher";
 import { useTranslations } from "next-intl";
 import { LocaleSwitcher } from "../LocaleSwitcher";
@@ -14,6 +13,8 @@ import { usePathname } from "@/utils";
 import { CollapsedButton } from "../CollapsedButton";
 import { Profile } from "../Profile";
 import { pathnames } from "@/utils";
+
+const NAME = "Hugo Cruz de la Torres";
 
 export const NavBar: React.FC = () => {
   const router = useRouter();
@@ -28,8 +29,6 @@ export const NavBar: React.FC = () => {
   const isResume = pathname === "/resume";
   const isContact = pathname === "/contact";
   const isHome = pathname === "/";
-
-  const { name } = data;
 
   const handleNavigatePage = () => {
     if (isResume) {
@@ -115,7 +114,7 @@ export const NavBar: React.FC = () => {
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
               <Profile
-                name={name}
+                name={NAME}
                 collapsed
               />
               <div className="flex items-center">
@@ -147,11 +146,10 @@ export const NavBar: React.FC = () => {
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky  dark:text-white top-0 z-10 tablet:flex`}
       >
-        <Profile name={name} />
+        <Profile name={NAME} />
 
         <div className="flex">
           {renderButtons()}
-
           <LocaleSwitcher />
           <Button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
             <ThemeSwitcher theme={theme} />

@@ -50,8 +50,10 @@
     "built": "creado con",
     "hosting": "y alojamiento de Vercel"
   },
-  "SubmitBtn": {
-    "submit": "Enviar"
+  "Buttons": {
+    "submit": "Enviar",
+    "contact": "Contacte conmigo aquí",
+    "downloadCV": "Descargar CV"
   },
   "ContactForm": {
     "title": "Contacte conmigo",
@@ -79,5 +81,115 @@
     "sitaDescription": "Aplicación para gestionar los vuelos y desvíos de las compañías aéreas. También permite la interacción entre la tripulación de cabina y los coordinadores de vuelo. Utiliza la api Graph de Microsoft.",
     "svdDescription": "Comercio electrónico de la empresa SVD. Actualizado de Magento a las tecnologías líderes del mercado. Cuenta con muchas de las mejores integraciones del momento.",
     "iberiaDescription": "Aplicación para administrar los pasajeros y maletas usada  por los agentes coordinadores de IBERIA. Consume y procesa  datos en tiempo real."
+  },
+  "Resume": {
+    "tagline": "Soy un desarrollador de software full stack con un enfoque en el desarrollo web.",
+    "description": "Soy un apasionado desarrollador Full Stack con sólida experiencia en la creación y mejora de aplicaciones web y móviles. A lo largo de mi carrera, he trabajado en una variedad de proyectos, asumiendo roles clave que han fortalecido mis habilidades técnicas y mi capacidad para ofrecer soluciones innovadoras. Mi enfoque principal ha sido el desarrollo web, y he trabajado con varias tecnologías para cumplir con los objetivos de mis clientes y empleadores."
+  },
+  "Education": {
+    "title": "Educación",
+    "universityName": "Universidad de Oriente, Santiago de Cuba, Cuba",
+    "universityDate": "2009-2014",
+    "universityPara": "Licenciatura en Ciencias de la Computación"
+  },
+  "Works": {
+    "title": "Mi Experiencia",
+    "firstJob_location": "Holguín, Cuba",
+    "firstJob_type": "Presencial Tiempo Completo",
+    "firstJob_description": "Trabajé para el departamento de informática impartiendo clases de Estructuras de Datos 1 y 2 / Bases de Datos e Ingeniería de Software, además de participar en el desarrollo del software Taxia Detection utilizando las siguientes tecnologías: Asp.Net 3.5 MVC + JQuery + SQL Server + HTML5 + CSS.",
+    "firstJob_date": "Septiembre de 2014 - Diciembre de 2016",
+    "firstJob_position": "Desarrollador FrontenJobd / Profesor",
+    "firstJob_company": "Universidad de Holguín",
+
+    "secondJob_location": "Habana, Cuba",
+    "secondJob_type": "Presencial Tiempo Completo",
+    "secondJob_description": "Trabajé en el departamento de aplicaciones en el desarrollo y mantenJobimiento del software SISCONT v4 v5 y v6 utilizando las siguientes tecnologías: Angular 7/8 + Typescript + Bootstrap + HTML5 + CSS + Ignia + Genexus + SQL Server.",
+    "secondJob_date": "Enero 2017 - Deciembre 2019",
+    "secondJob_position": "Desarrollador FrontenJobd",
+    "secondJob_company": "Tecnomática",
+
+    "threeJob_location": "Habana, Cuba",
+    "threeJob_type": "Autónomo",
+    "threeJob_description": "Estuve trabajando en la actualización y optimización del sitio web(Swiss) Marketplace Boilerplate utilizando las siguientes tecnologías: Angular 8 + Typescript + Bootstrap + HTML5 + CSS + Nodejs + Express + MongoDB + Jsonwebtoken + Mongoose.",
+    "threeJob_date": "Agosto 2020 - Deciembre 2020",
+    "threeJob_position": "FrontenJobd Developer",
+    "threeJob_company": "Marketplace Boilerplate",
+
+    "fourJob_location": "Holguín, Cuba",
+    "fourJob_type": "Autónomo",
+    "fourJob_description": "Estuve trabajando en la actualización y optimización de la app Mealdeals(suiza) utilizando las siguientes tecnologías: Ionic-Angular + Bootstrap + HTML5 + CSS + Nodejs + Express + MongoDB + Jsonwebtoken + Mongoose.",
+    "fourJob_date": "Enero 2020 - Agosto 2020",
+    "fourJob_position": "Desarrollador FrontenJobd",
+    "fourJob_company": "Marketplace Boilerplate",
+
+    "fiveJob_location": "Holguín, Cuba",
+    "fiveJob_type": "Autónomo",
+    "fiveJob_description": "Estuve trabajando en el desarrollo y mantenJobimiento de la web (suiza) Autovenn utilizando las siguientes tecnologías: Angular 9 + Typescript + Bootstrap + HTML5 + CSS + Nodejs + Express + MongoDB + Jsonwebtoken + Mongoose.",
+    "fiveJob_date": "Agosto 2020 - Diciembre 2020",
+    "fiveJob_position": "Desarrollador Full Stack",
+    "fiveJob_company": "Autovenn",
+
+    "sixJob_location": "Holguín, Cuba",
+    "sixJob_type": "Autónomo",
+    "sixJob_description": "Estuve trabajando en la actualización y optimización del sitio web Growing Brilliant utilizando las siguientes tecnologías: React 15 + Bootstrap + HTML5 + CSS.",
+    "sixJob_date": "Mayo 2021 - Julio 2021",
+    "sixJob_position": "Desarrollador FrontenJobd",
+    "sixJob_company": "NTSprint",
+
+    "sevenJob_location": "Holguín, Cuba",
+    "sevenJob_type": "Remoto Tiempo Completo",
+    "sevenJob_description": "Trabajé en el desarrollo y mantenJobción del sitio web/app Portal Común de Coordinación de Salud para el sistema de salud chileno utilizando las siguientes tecnologías: React 15 + Typescript + Material UI + HTML5 + CSS + Nodejs + Express + Jsonwebtoken + Sequelize.",
+    "sevenJob_date": "Enero 2021 - Abril 2021",
+    "sevenJob_position": "Desarrollador Full Stack",
+    "sevenJob_company": "ACL",
+
+    "eightJob_location": "Holguín, Cuba",
+    "eightJob_type": "Remoto Tiempo Completo",
+    "eightJob_description": "Trabajé en el desarrollo y mantenJobimiento del sitio web de Transporte-Administración para el uso de geocercas utilizando las siguientes tecnologías: Angular 11 + Typescript + Material UI + HTML5 + CSS + Firebase (Auth - Firestore - Storage - Realtime Database).",
+    "eightJob_date": "Abril 2021 - Diciembre 2021",
+    "eightJob_position": "Desarrollador Full Stack",
+    "eightJob_company": "ACL",
+
+    "nineJob_location": "Holguín, Cuba / Barcelona, Spaña",
+    "nineJob_type": "Remoto Tiempo Parcial",
+    "nineJob_description": "Trabajé en el proyecto PreconZ en el desarrollo de una aplicación web/móvil para el control de proyectos y usuarios utilizando las siguientes tecnologías: React 18 + React-Native + Typescript + Material UI + NativeBase + HTML5 + CSS + Firebase (Auth - Firestore - Storage - Realtime Database) + HubSpot.",
+    "nineJob_date": "May 2022 - October 2022",
+    "nineJob_position": "Desarrollador Full Stack",
+    "nineJob_company": "ACL",
+
+    "tenJob_location": "Holguín, Cuba",
+    "tenJob_type": "Remoto Tiempo Completo",
+    "tenJob_description": "Trabajé en el desarrollo de un sitio web/app Admisión Digital para el sistema de salud chileno utilizando las siguientes tecnologías: React 16 + Material UI+ Node.js + Typescript + Express + Sequelize + Nestjs + .Net Core 6 + HTML5 y CSS.",
+    "tenJob_date": "Enero 2022 - Mayo 2022",
+    "tenJob_position": "Desarrollador Full Stack",
+    "tenJob_company": "ACL",
+
+    "elevenJob_location": "Barcelona, Spaña",
+    "elevenJob_type": "Híbrido Tiempo Completo",
+    "elevenJob_description": "Trabajé en la aplicación web/móvil Mission Control para el control de vuelos en aeropuertos y aviones utilizando las siguientes tecnologías: React 16/React-Native + Typescript + Graph API con Microsoft Teams Node.js + Express + MongoDB + Material UI + HTML5 y CSS.",
+    "elevenJob_date": "Agosto 2022 - Febrero 2023",
+    "elevenJob_position": "Desarrollador Full Stack",
+    "elevenJob_company": "SITA AIRCRAFT",
+
+    "twelveJob_location": "Barcelona, Spaña",
+    "twelveJob_type": "Híbrido Tiempo Completo",
+    "twelveJob_description": "Trabajé en la mejora y actualización de su sitio web utilizando las siguientes tecnologías: Next.js 12/13 + Typescript + Tailwind CSS + Formik + React-Cookie + GraphQL(Apollo Client + Graph Codegen) para la maquetación y peticiones de datos al backend y Cypress para las pruebas.",
+    "twelveJob_date": "Febrero 2023 - Noviembre 2023",
+    "twelveJob_position": "Desarrollador Frontend",
+    "twelveJob_company": "SVD",
+
+    "thirteenJob_location": "Barcelona, Spaña",
+    "thirteenJob_type": "Autónomo",
+    "thirteenJob_description": "Trabajé en la mejora y actualización del software Aviato utilizando las siguientes tecnologías: Next.js 12 + Typescript + Chakra UI + Apollo GraphQL + Nodejs + MikroORM + Express + PostgreSQL + Keycloak + AWS.",
+    "thirteenJob_date": "Abril 2023 - Julio 2023",
+    "thirteenJob_position": "Desarrollador Full Stack",
+    "thirteenJob_company": "IIG",
+
+    "fourteenJob_location": "Barcelona, Spaña",
+    "fourteenJob_type": "Remoto Tiempo Completo",
+    "fourteenJob_description": "Trabajo en el desarrollo y mantenimiento del módulo TAM e integraciones de la aplicación Pax & Bags utilizando las siguientes tecnologías: React 18 + Nestjs(CQRS) + Typescript + GraphQL + Postgres + TailwindCSS + Cypress + Docker + AWS.",
+    "fourteenJob_date": "November 2023 - Present",
+    "fourteenJob_position": "Desarrollador Full Stack",
+    "fourteenJob_company": "IBERIA"
   }
 }

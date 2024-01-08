@@ -12,9 +12,6 @@ import {
 } from "@/components";
 import { stagger } from "@/animations";
 
-// Local Data
-import data from "@/data/portfolio.json";
-
 export const Home: React.FC = () => {
   // Translations
   const t = useTranslations("IndexPage");

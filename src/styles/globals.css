@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./markdown.css";
 
 body {
   @apply dark:bg-black dark:text-white;

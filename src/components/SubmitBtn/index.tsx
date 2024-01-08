@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 export function SubmitBtn() {
   const { pending } = useFormStatus();
-  const t = useTranslations("SubmitBtn");
+  const t = useTranslations("Buttons");
 
   return (
     <button
