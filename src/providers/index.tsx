@@ -15,11 +15,12 @@ export function Providers({ children }: ThemeProviderProps) {
   if (!mounted) {
     return null;
   }
+
   return (
     <ThemeProvider
       attribute="class"
       enableSystem={false}
-      defaultTheme="system"
+      defaultTheme="dark"
     >
       <SmoothScroll>{children}</SmoothScroll>
     </ThemeProvider>

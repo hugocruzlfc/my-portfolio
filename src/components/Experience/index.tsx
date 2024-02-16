@@ -14,6 +14,7 @@ import { useTranslations } from "next-intl";
 export const Experience: React.FC = () => {
   const { theme } = useTheme();
   const t = useTranslations("Works");
+
   return (
     <section
       id="experience"
