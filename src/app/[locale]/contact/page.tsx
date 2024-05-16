@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import { Contact } from "@/components";
-import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
 type Props = {

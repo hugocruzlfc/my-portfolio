@@ -7,6 +7,7 @@ import clsx from "clsx";
 import { NextIntlClientProvider } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Toaster } from "react-hot-toast";
+import { getMessages } from "next-intl/server";
 
 type Props = {
   children: React.ReactNode;
@@ -48,12 +49,7 @@ export default async function LocaleLayout({
   children,
   params: { locale },
 }: Props) {
-  let messages;
-  try {
-    messages = (await import(`../../../messages/${locale}.json`)).default;
-  } catch (error) {
-    notFound();
-  }
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
@@ -65,10 +61,7 @@ export default async function LocaleLayout({
         )}
       >
         <Providers>
-          <NextIntlClientProvider
-            locale={locale}
-            messages={messages}
-          >
+          <NextIntlClientProvider messages={messages}>
             <main
               className="relative"
               data-lenis-prevent

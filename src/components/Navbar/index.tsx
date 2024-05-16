@@ -3,13 +3,12 @@ import React from "react";
 import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useLenis } from "@studio-freight/react-lenis";
 import { Button } from "../Button";
 import { ThemeSwitcher } from "../ThemeSwitcher";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { LocaleSwitcher } from "../LocaleSwitcher";
-import { usePathname } from "@/utils";
+import { usePathname, useRouter } from "@/utils";
 import { CollapsedButton } from "../CollapsedButton";
 import { Profile } from "../Profile";
 import { pathnames } from "@/utils";
@@ -63,7 +62,7 @@ export const NavBar: React.FC = () => {
             </Button>
             <Button
               onClick={() =>
-                lenis.scrollTo("#workId", {
+                lenis?.scrollTo("#workId", {
                   duration: 2,
                   easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
                 })
@@ -73,7 +72,7 @@ export const NavBar: React.FC = () => {
             </Button>
             <Button
               onClick={() =>
-                lenis.scrollTo("#skillId", {
+                lenis?.scrollTo("#skillId", {
                   duration: 2,
                   easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
                 })

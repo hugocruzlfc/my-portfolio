@@ -13,7 +13,7 @@ export const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
       options={{
         lerp: 0.1,
         duration: 1.5,
-        smoothTouch: true,
+        easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
       }}
     >
       {children}
