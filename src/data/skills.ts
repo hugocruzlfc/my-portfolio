@@ -47,4 +47,9 @@ export const othersData = [
   "AWS",
   "Vercel",
   "Sonar Qube",
+  "CQRS",
+  "SOLID",
+  "Design Patterns",
+  "Microservices",
+  "TDD",
 ] as const;
