@@ -3,6 +3,7 @@ import achsProjectImg from "../../public/projects/achs-project.png";
 import sitaProjectImg from "../../public/projects/sita-project.png";
 import svdProjectImg from "../../public/projects/svd-project.png";
 import iberiaProjectImg from "../../public/projects/iberia-project.png";
+import cmrcProjectImg from "../../public/projects/cmrc-project.png";
 
 export const projectsData = [
   {
@@ -41,5 +42,11 @@ export const projectsData = [
     description: "iberiaDescription",
     tags: ["React", "React-Query", "Nest.js", "Postgres", "Tailwind", "CQRS"],
     imageUrl: iberiaProjectImg,
+  },
+  {
+    title: "cmrcName",
+    description: "cmrcDescription",
+    tags: ["React", "Nextjs", "Prisma", "Postgres", "Shadcn", "Stripe"],
+    imageUrl: cmrcProjectImg,
   },
 ] as const;

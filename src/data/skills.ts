@@ -52,4 +52,10 @@ export const othersData = [
   "Design Patterns",
   "Microservices",
   "TDD",
+  "Shadcn",
+  "Stripe",
+  "React-Query",
+  "Zustand",
+  "React-Hook-Form",
+  "Zod",
 ] as const;
