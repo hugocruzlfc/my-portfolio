@@ -100,7 +100,7 @@
 
     "secondJob_location": "Havana, Cuba",
     "secondJob_type": "On-site Full Time",
-    "secondJob_description": "I worked on the applications department in the development and maintenJobance of SISCONT v4 v5 and v6 software using the following technologies: Angular 7/8 + Typescript + Bootstrap + HTML5 + CSS + Ignia + Genexus + SQL Server.",
+    "secondJob_description": "I worked on the applications department in the development and maintenance of SISCONT v4 v5 and v6 software using the following technologies: Angular 7/8 + Typescript + Bootstrap + HTML5 + CSS + Ignia + Genexus + SQL Server.",
     "secondJob_date": "January 2017 - December 2019",
     "secondJob_position": "Frontend Developer",
     "secondJob_company": "Tecnomatica",
@@ -121,7 +121,7 @@
 
     "fiveJob_location": "Holguin, Cuba",
     "fiveJob_type": "Freelance",
-    "fiveJob_description": "I worked on the development and maintenJobance of the (Swiss) Autovenn website using the following technologies: Angular 9 + Typescript + Bootstrap + HTML5 + CSS + Nodejs + Express + MongoDB + Jsonwebtoken + Mongoose.",
+    "fiveJob_description": "I worked on the development and maintenance of the (Swiss) Autovenn website using the following technologies: Angular 9 + Typescript + Bootstrap + HTML5 + CSS + Nodejs + Express + MongoDB + Jsonwebtoken + Mongoose.",
     "fiveJob_date": "August 2020 - December 2020",
     "fiveJob_position": "Full Stack Developer",
     "fiveJob_company": "Autovenn",
@@ -135,14 +135,14 @@
 
     "sevenJob_location": "Holguin, Cuba",
     "sevenJob_type": "Remote Full Time",
-    "sevenJob_description": "I worked on the development and maintenJobance of the web site/app Common Health Coordination Portal for the Chilean health system using the following technologies: React 15 + Typescript + Material UI + HTML5 + CSS + Nodejs + Express + Jsonwebtoken + Sequelize.",
+    "sevenJob_description": "I worked on the development and maintenance of the web site/app Common Health Coordination Portal for the Chilean health system using the following technologies: React 15 + Typescript + Material UI + HTML5 + CSS + Nodejs + Express + Jsonwebtoken + Sequelize.",
     "sevenJob_date": "January 2021 - April 2021",
     "sevenJob_position": "Full Stack Developer",
     "sevenJob_company": "ACL",
 
     "eightJob_location": "Holguin, Cuba",
     "eightJob_type": "Remote Full Time",
-    "eightJob_description": "I worked on the development and maintenJobance of the Transport-Administration web site for the use of geofences using the following technologies: Angular 11 + Typescript + Material UI + HTML5 + CSS + Firebase (Auth - Firestore - Storage - Realtime Database).",
+    "eightJob_description": "I worked on the development and maintenance of the Transport-Administration web site for the use of geofences using the following technologies: Angular 11 + Typescript + Material UI + HTML5 + CSS + Firebase (Auth - Firestore - Storage - Realtime Database).",
     "eightJob_date": "April 2021 - December 2021",
     "eightJob_position": "Full Stack Developer",
     "eightJob_company": "ACL",
