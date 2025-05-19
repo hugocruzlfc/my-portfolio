@@ -6,6 +6,7 @@ export const languagesData = [
   "SQL",
   "GENEXUS",
   "C#/C++",
+  "Python",
 ] as const;
 
 export const frameworksData = [
@@ -17,6 +18,8 @@ export const frameworksData = [
   "Ionic",
   "React-Native",
   "ASP.Net",
+  "Express.js",
+  "FastAPI",
 ] as const;
 
 export const othersData = [
