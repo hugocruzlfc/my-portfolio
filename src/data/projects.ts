@@ -4,6 +4,7 @@ import sitaProjectImg from "../../public/projects/sita-project.png";
 import svdProjectImg from "../../public/projects/svd-project.png";
 import iberiaProjectImg from "../../public/projects/iberia-project.png";
 import cmrcProjectImg from "../../public/projects/cmrc-project.png";
+import iagProjectImg from "../../public/projects/iag-project.png";
 
 export const projectsData = [
   {
@@ -48,5 +49,20 @@ export const projectsData = [
     description: "cmrcDescription",
     tags: ["React", "Nextjs", "Prisma", "Postgres", "Shadcn", "Stripe"],
     imageUrl: cmrcProjectImg,
+  },
+  {
+    title: "iagName",
+    description: "iagDescription",
+    tags: [
+      "Nextjs",
+      "Postgres",
+      "Shadcn",
+      "OpenAI",
+      "Authjs",
+      "V0",
+      "FastApi",
+      "React-Query",
+    ],
+    imageUrl: iagProjectImg,
   },
 ] as const;

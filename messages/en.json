@@ -72,12 +72,14 @@
     "svdName": "SVD Website",
     "iberiaName": "Pag & Bag TAM Module",
     "cmrcName": "CMRC website",
+    "iagName": "AOG Support Information System",
     "aclDescription": "I worked as a full-stack developer on this startup project for 8 months. A panel to manage geofences.",
     "achsDescription": "Dashboard for workers and patients of the Chilean health system. It has features such as filtering, sorting and pagination.",
     "sitaDescription": "Application to manage flights and diversions by airlines. It also allows interaction between the cabin crew and flight coordinators. Uses Microsoft Graph api.",
     "svdDescription": "E-commerce of the company SVD. Upgraded from Magento to market leading technologies. It has many of the best integrations of the moment.",
     "iberiaDescription": "Passenger and baggage management application used by IBERIA's coordinating agents. It consumes and processes data in real time.",
-    "cmrcDescription": "Car rental website designed with a focus on user experience. Intuitive and efficient reservation system with secure payment integration and flexible rental options."
+    "cmrcDescription": "Car rental website designed with a focus on user experience. Intuitive and efficient reservation system with secure payment integration and flexible rental options.",
+    "iagDescription": "Chatbot with AI and integrated dashboard. It offers seamless interaction, secure authentication and efficient real-time AOG analysis."
   },
   "Resume": {
     "tagline": "I'm a full-stack software developer with a focus on web development.",
@@ -185,15 +187,22 @@
     "fourteenJob_location": "Barcelona, Spain",
     "fourteenJob_type": "Remote Full Time",
     "fourteenJob_description": "I work on the development and maintenance of the TAM module and integrations of the Pax & Bags application using the following technologies: React 18 + Nestjs(CQRS) + Typescript + GraphQL + Postgres + TailwindCSS + Cypress + Docker + AWS.",
-    "fourteenJob_date": "November 2023 - Present",
+    "fourteenJob_date": "November 2023 - April 2025",
     "fourteenJob_position": "Full Stack Developer",
     "fourteenJob_company": "IBERIA",
 
     "fifteenJob_location": "Barcelona, Spain",
     "fifteenJob_type": "Freelance",
     "fifteenJob_description": "Create a car rental website designed with a focus on user experience. The booking system is intuitive and efficient, with secure payment integration and flexible rental options. I used the following technologies: Next.js 14/15, TypeScript, Shadcn, Auth.js, React-Hook-Form, Prisma, PostgreSQL and Vercel.",
-    "fifteenJob_date": "July 2024 - Present",
+    "fifteenJob_date": "July 2024 - October 2024",
     "fifteenJob_position": "Full Stack Developer",
-    "fifteenJob_company": "CMRC"
+    "fifteenJob_company": "CMRC",
+
+    "sixteenJob_location": "Barcelona, Spain",
+    "sixteenJob_type": "Hybrid Full Time",
+    "sixteenJob_description": "Developed an AI-powered chatbot with an integrated analytics dashboard for IAG, designed for seamless user interaction. The system provides secure authentication and real-time AOG analysis through a responsive interface. I used the following technologies: Next.js, TypeScript, Shadcn, Auth.js, React-Query, FastAPI, PostgreSQL, OpenAI, and V0.",
+    "sixteenJob_date": "April 2025 - Present",
+    "sixteenJob_position": "Full Stack Developer",
+    "sixteenJob_company": "IAG"
   }
 }
