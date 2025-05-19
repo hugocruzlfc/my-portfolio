@@ -77,12 +77,14 @@
     "svdName": "Sitio web de SVD",
     "iberiaName": "Módulo TAM de Pag & Bag",
     "cmrcName": "Sitio web de CMRC",
+    "iagName": "Sistema de información de apoyo al AOG",
     "aclDescription": "Trabajé como desarrollador full-stack en este proyecto de startup durante 8 meses. Un panel para administrar geocercas.",
     "achsDescription": "Tablero para trabajadores y pacientes del sistema de salúd de Chile. Tiene características como filtrado, clasificación y paginación.",
     "sitaDescription": "Aplicación para gestionar los vuelos y desvíos de las compañías aéreas. También permite la interacción entre la tripulación de cabina y los coordinadores de vuelo. Utiliza la api Graph de Microsoft.",
     "svdDescription": "Comercio electrónico de la empresa SVD. Actualizado de Magento a las tecnologías líderes del mercado. Cuenta con muchas de las mejores integraciones del momento.",
     "iberiaDescription": "Aplicación para administrar los pasajeros y maletas usada  por los agentes coordinadores de IBERIA. Consume y procesa  datos en tiempo real.",
-    "cmrcDescription": "Sitio web para la renta de autos, diseñado con un enfoque en la experiencia del usuario. Sistema de reservas intuitivo y eficiente, con integración de pagos seguros y opciones flexibles de alquiler."
+    "cmrcDescription": "Sitio web para la renta de autos, diseñado con un enfoque en la experiencia del usuario. Sistema de reservas intuitivo y eficiente, con integración de pagos seguros y opciones flexibles de alquiler.",
+    "iagDescription": "Chatbot con IA y dashboard integrado. Ofrece interacción fluida, autenticación segura y análisis eficiente de AOG en tiempo real."
   },
   "Resume": {
     "tagline": "Soy un desarrollador de software full stack con un enfoque en el desarrollo web.",

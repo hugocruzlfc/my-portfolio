@@ -72,12 +72,14 @@
     "svdName": "SVD Website",
     "iberiaName": "Pag & Bag TAM Module",
     "cmrcName": "CMRC website",
+    "iagName": "AOG Support Information System",
     "aclDescription": "I worked as a full-stack developer on this startup project for 8 months. A panel to manage geofences.",
     "achsDescription": "Dashboard for workers and patients of the Chilean health system. It has features such as filtering, sorting and pagination.",
     "sitaDescription": "Application to manage flights and diversions by airlines. It also allows interaction between the cabin crew and flight coordinators. Uses Microsoft Graph api.",
     "svdDescription": "E-commerce of the company SVD. Upgraded from Magento to market leading technologies. It has many of the best integrations of the moment.",
     "iberiaDescription": "Passenger and baggage management application used by IBERIA's coordinating agents. It consumes and processes data in real time.",
-    "cmrcDescription": "Car rental website designed with a focus on user experience. Intuitive and efficient reservation system with secure payment integration and flexible rental options."
+    "cmrcDescription": "Car rental website designed with a focus on user experience. Intuitive and efficient reservation system with secure payment integration and flexible rental options.",
+    "iagDescription": "Chatbot with AI and integrated dashboard. It offers seamless interaction, secure authentication and efficient real-time AOG analysis."
   },
   "Resume": {
     "tagline": "I'm a full-stack software developer with a focus on web development.",
