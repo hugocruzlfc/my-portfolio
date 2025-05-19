@@ -146,4 +146,13 @@ export const experiencesData = [
     type: "fifteenJob_type",
     company: "fifteenJob_company",
   },
+  {
+    position: "sixteenJob_position",
+    location: "sixteenJob_location",
+    description: "sixteenJob_description",
+    icon: React.createElement(TbBrandNextjs),
+    date: "sixteenJob_date",
+    type: "sixteenJob_type",
+    company: "sixteenJob_company",
+  },
 ] as const;
